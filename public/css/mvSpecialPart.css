@@ -1,0 +1,171 @@
+/* ------------mv-special-part------------------- */
+
+
+
+.mv-special-part {
+  margin-top: 75px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.left-part,
+.right-part {
+  height: 100%;
+  background-color: black;
+  position: relative;
+  height: calc(100vw * (47 / 192));
+  max-height: 650px;
+}
+.left-part {
+  width: 40%;
+}
+.right-part {
+  width: 60%;
+}
+.mv-special-part-img {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+}
+.part-img-left {
+  left: -5%;
+}
+.part-img-right {
+  right: -5%;
+}
+.left-part a,
+.right-part a {
+  position: relative;
+}
+.left-part div,
+.right-part div {
+  overflow: hidden;
+}
+.part-content-href{
+  height: 30%;
+}
+.part-content-href a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.href-to-up-first{
+  position: relative;
+  top: -100%;
+  animation: toUpFirst 0.4s ease;
+}
+.href-to-up-last{
+  position: relative;
+  top: -100%;
+  animation: toUpLast 0.4s ease;
+}
+.href-to-down-first{
+  position: relative;
+  top: 0%;
+  animation: toDownFirst 0.4s ease;
+}
+.href-to-down-last{
+  position: relative;
+  top: 0%;
+  animation: toDownLast 0.4s ease;
+}
+@keyframes toUpFirst{
+  from{
+    top: 0;
+    opacity: 1;
+  }
+  to{
+    top: -100%;
+    opacity: 0;
+  }
+}
+@keyframes toUpLast{
+  from{
+    top: 0;
+    opacity: 0;
+  }
+  to{
+    top: -100%;
+    opacity: 1;
+  }
+}
+@keyframes toDownFirst{
+  from{
+    top: -100%;
+    opacity: 0;
+  }
+  to{
+    top: 0%;
+    opacity: 1;
+  }
+}
+@keyframes toDownLast{
+  from{
+    top: -100%;
+    opacity: 1;
+  }
+  to{
+    top: 0%;
+    opacity: 0;
+  }
+}
+.img-href-hidden{
+  opacity: 0;
+}
+.part-blur{
+  opacity: 0.6;
+}
+.left-content >.part-content-href > a:last-child::after {
+  content: "We ride it. We wear it";
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 15px;
+}
+.right-content >.part-content-href > a:last-child::after {
+  content: "Upgrade to next level";
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 15px;
+}
+/* .left-part:hover a,
+.right-part:hover a {
+  opacity: 1;
+  animation: transformTxtReverse 0.4s ease;
+}
+.left-part:not(:hover) a,
+.right-part:not(:hover) a {
+  animation: transformTxt 0.4s ease;
+} */
+
+.left-content,
+.right-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.right-content {
+  padding-left: 18px;
+  align-items: flex-start;
+}
+.left-content a,
+.right-content a {
+  cursor: pointer;
+  font-size: calc(26vw * 0.2);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Anton";
+}

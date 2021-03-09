@@ -1,0 +1,212 @@
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.mv-bg .react-slideshow-fade-images-wrap,
+.motor-slide-img-layout > .react-slideshow-fade-images-wrap {
+  /* height: 100vh; */
+  height: 100%;
+}
+.each-fade {
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+
+.each-fade > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.each-fade div {
+  width: 100%;
+}
+
+/* -------------indicator ---------------- */
+
+.indicators {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  /* left: 11%; */
+}
+
+.indicator {
+  z-index: 10;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  margin-left: 15px;
+  border: 1px white solid;
+}
+
+.indicator.active {
+  color: white;
+  /* background-color: #b69539; */
+  background-color: white;
+}
+.react-slideshow-wrapper,
+.react-slideshow-fade-wrapper {
+  border-radius: 4px;
+  box-shadow: rgb(185, 185, 185) 0px 6px 5px 0px;
+}
+/* -=======================================================-trang motor 3d slide */
+.motor-slide-img-layout > div {
+  width: 70%;
+  height: 70%;
+  /* position: relative; */
+  border-radius: 5px;
+}
+.motor-slide-img-layout .indicators {
+  position: absolute;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 100%;
+  left: 50%;
+  z-index: 1;
+}
+
+.motor-slide-img-layout .indicator {
+  background-color: #b69539;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: none;
+}
+.arr-l,
+.arr-r {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.arr-l:hover::before, .arr-r:hover::before{
+  opacity: 1;
+}
+.arr-r::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: #fff;
+  display: block;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0.75;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+}
+.arr-l::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-width: 2px 2px 0 0;
+  border-style: solid;
+  border-color: #fff;
+  display: block;
+  -webkit-transform: translate(-50%, -50%) rotate(225deg);
+  -ms-transform: translate(-50%, -50%) rotate(225deg);
+  transform: translate(-50%, -50%) rotate(225deg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0.75;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+/* .motor-slide-img-layout .undefined:first-child:hover{
+  animation: translatedLeft .65s ease infinite;
+}
+@keyframes translatedLeft{
+  0%{transform: translateX(0px);}
+  50%{transform: translateX(-15px);}
+  100%{transform: translateX(0px);}
+}
+.motor-slide-img-layout .undefined:last-child:hover{
+  animation: translatedRight .65s ease infinite;
+}
+@keyframes translatedRight{
+  0%{transform: translateX(0px);}
+  50%{transform: translateX(15px);}
+  100%{transform: translateX(0px);}
+} */
+.motor-slide-img-layout .indicator.active {
+  background-color: white;
+  width: 25px;
+  border-radius: 20px;
+}
+.motor-slide-img-layout .each-fade {
+  /* border-radius: 7px; */
+  overflow: hidden;
+}
+@media screen and (max-width: 1450px) {
+  .motor-slide-img-layout .indicators {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    left: 50%;
+    height: 20px;
+  }
+  /* .motor-slide-img-layout > div {
+    width: 75%;
+    height: 70%;
+    position: relative;
+  } */
+}
+@media screen and (max-width: 1150px) {
+  /* .motor-slide-img-layout > div {
+    width: 78%;
+    height: 72%;
+  } */
+}
+@media screen and (max-width: 950px) {
+  .motor-slide-img-layout .react-slideshow-container .undefined:first-child {
+    opacity: 0;
+    left: 0;
+    display: none;
+  }
+  .motor-slide-img-layout .react-slideshow-container .undefined:last-child {
+    opacity: 0;
+    left: 85%;
+    display: none;
+  }
+  .motor-slide-img-layout > div {
+    width: 100%;
+  }
+  .each-fade {
+    width: 100%;
+    /* height: 450px; */
+  }
+  .react-slideshow-wrapper {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .indicators {
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .indicator {
+    margin: 7px;
+  }
+}

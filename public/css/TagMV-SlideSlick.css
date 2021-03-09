@@ -1,0 +1,130 @@
+@media screen and (min-width: 990px){
+  .slider_wrap{
+    opacity: 0;
+    display: none;
+  }
+}
+.slider_wrap {
+  width: 100vw;
+  /* height: 100vh; */
+  height: 120vh;
+  overflow: hidden;
+  background-color: white;
+}
+.banner_slider {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thumbnail_slider {
+  /* top: -95%; */
+  top: -75%;
+}
+.slick-track {
+  display: flex !important;
+  flex-direction: row;
+}
+.banner_slider .slick-slide {
+  width: 100vw !important;
+}
+.tag-type-name {
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.3);
+}
+.tag-type-name_chosen{
+  color: #000;
+}
+.img-tag-type {
+  transform: scale(1.1);
+}
+.slide-arrow , .slick-arrow{
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.prev-arrow, .slick-prev {
+  padding-left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.next-arrow , .slick-next {
+  padding-right: 40px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-tag-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner-tag-img img {
+  position: absolute;
+  object-fit: contain;
+  width: 100%;
+  top: 35%;
+  transform: translateY(-35%) scale(1.1);
+  cursor: grab;
+}
+.banner-tag-img img:active {
+  cursor: grabbing;
+}
+.banner-tag-content {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 20px;
+  height: auto;
+  opacity: 1;
+  width: 100%;
+}
+.banner-tag-content p {
+  width: 70%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.banner-tag-content a{
+  margin-right: 12px;
+  margin-left: 30px;
+  width: 190px;
+  min-width: 130px;
+  height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .slider_wrap {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .tag-type-name {
+    font-size: 25px;
+  }
+  .thumbnail_slider{
+    top: -82%;
+  }
+  .banner-tag-img {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+  }
+  .banner-tag-img img{
+    transform: translateY(-30%) scale(1.3);
+  }
+}
