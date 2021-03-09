@@ -1,0 +1,187 @@
+.plus-bn {
+  margin: 0;
+  position: absolute;
+}
+.motorItems-layout {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.motorItems-container {
+  overflow: hidden;
+  border-radius: 4px;
+  width: 25%;
+  height: 1080px;
+  /* background-color: black; */
+  margin: 0 3px;
+  position: relative;
+  transition: width 1s cubic-bezier(0.2, 0, 0.2, 1);
+}
+.motorItems-container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+.mI-con-preview {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  opacity: 1;
+  transition: 0s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+.mI-con-preview:hover .plus-bn::before {
+  transform: scale(1.2);
+}
+.mI-con-pr-title {
+  color: white;
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  /* left: 0; */
+  bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue";
+  /* font-family: "Open Sans", sans-serif; */
+  font-weight: 800;
+  font-size: 45px;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+.items_ad_pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.advantages__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.mI-con-content {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 0.2s ease;
+  padding: 30px;
+}
+
+.mI-con-ct-title {
+  width: 500px;
+  font-family: "Bebas Neue", serif;
+  color: white;
+  line-height: 85%;
+  font-weight: 900;
+  font-size: calc(10vw * 0.55);
+  text-transform: uppercase;
+  transition: 0.6s ease;
+  position: relative;
+  opacity: 0;
+  right: -200px;
+  cursor: pointer;
+}
+.mI-con-ct-description {
+  color: white;
+  width: 380px;
+  /* font-family: "Questrial"; */
+  font-size: 19px;
+  opacity: 0;
+  transition: 0.6s ease;
+  position: relative;
+  right: -200px;
+}
+
+.motorItems-container__show {
+  width: 50%;
+}
+.motorItems-container__show .mI-con-preview {
+  z-index: -1;
+  opacity: 0;
+}
+.motorItems-container__show .mI-con-content {
+  opacity: 1;
+}
+.motorItems-container__show .mI-con-ct-title {
+  opacity: 1;
+  right: 0;
+}
+.motorItems-container__show .mI-con-ct-description {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (max-width: 1499px) {
+  .motorItems-container {
+    height: 768px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .motorItems-layout {
+    flex-direction: column;
+  }
+  .motorItems-container {
+    margin: 3px 0;
+    width: 100%;
+    height: auto;
+    height: 250px;
+    transition: height 0.5s ease;
+  }
+  .motorItems-container__show {
+    height: 580px;
+  }
+  .mI-con-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mI-con-pr-title {
+    transform: none;
+    writing-mode: horizontal-tb;
+    position: static;
+    margin: 0 3px;
+  }
+  .plus-bn {
+    position: relative;
+    margin: 0 3px;
+    margin-bottom: 5px;
+  }
+  .mI-con-ct-title,
+  .mI-con-ct-description {
+    right: 0;
+  }
+}
