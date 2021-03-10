@@ -107,7 +107,7 @@ export function MVCertifiedCenter() {
                         </p>
                     </div>
                     <div className="certified-center-right">
-                        <img src={"img/" + object.img} />
+                        <img src={"img/" + object.img} alt=""/>
                     </div>
                 </div>
                 <div className="certified-center-button">

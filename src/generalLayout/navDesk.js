@@ -481,7 +481,7 @@ const NavCompany = () => {
       <div className="mv-pr-layout nav-company">
         <div className="company-container">
           <h3>OUT BRAND</h3>
-          <a href="buy-your-mv">Buy Your MV</a>
+          <a href="certificate">Certificate</a>
           <a href="about-us">About Us</a>
           <a href="history">History</a>
           <a href="research-center">Research Center</a>

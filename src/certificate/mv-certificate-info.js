@@ -34,9 +34,9 @@ export function CertificateInfor() {
                     </div>
                 </div>
                 <h2 className="info-card-title-h2">
-                    <strong>
+                    {/* <strong> */}
                         37 CHECKS
-                </strong>
+                {/* </strong> */}
                 </h2>
                 <div className="info-card-certified">
                     <div className="info-card-content">
