@@ -24,8 +24,8 @@ export function MotorRideAppPhone({imgPhoneSrc}) {
     <>
     <div className="moto-app-container">
         <div className="btn-container">
-            <span className="button-img-active appear" onClick={MakeImgDisplayed.bind(Event, 0)}>MYBIKE</span>
-            <span className="button-img-active" onClick={MakeImgDisplayed.bind(Event, 1)}>ITINERAR</span>
+            <span className="button-img-active appear" onClick={MakeImgDisplayed.bind(Event, 0)}>MY BIKE</span>
+            <span className="button-img-active" onClick={MakeImgDisplayed.bind(Event, 1)}>ITINERARIES</span>
             <span className="button-img-active" onClick={MakeImgDisplayed.bind(Event, 2)}>TRIPS</span>
         </div>
         <div className="images-container">

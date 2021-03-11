@@ -1,236 +1,268 @@
-
-body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(243, 243, 243);
-}
-
 .moto-app-container {
-    width: 100vw;
+  width: 100vw;
+  margin-top: 25vh;
+  position: relative;
 }
 
 .images-container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .phone-image {
-    position: absolute;
-    height: 100vh;
-    opacity: 0;
+  position: absolute;
+  height: 100vh;
+  opacity: 0;
 }
 
 .phone-image img {
-    height: 100%;
+  height: 100%;
 }
 
 .btn-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 330px;
-    height: 250px;
-    margin-top: 15%;
-    margin-left: 7.5%;
-    z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 250px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12%;
 }
 
 .button-img-active {
-    font-size: 80px;
-    font-weight: 900;
-    color: black;
-    padding: 0%;
-    width: 0px;
-    height: 70px;
-    opacity: 0.2;
-    cursor: pointer;
+  font-size: 80px;
+  font-weight: 900;
+  color: black;
+  line-height: 100%;
+  opacity: 0.2;
+  cursor: pointer;
+  font-family: "Bebas Neue";
 }
 
 .button-img-active:hover {
-    opacity: 1;
-    transition: 0.5s;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .content-container {
-    position: absolute;
-    height: 100vh;
-    width: 25%;
-    margin-top: -100vh;
-    margin-left: 67%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-form {
-    position: absolute;
-    height: 100vh;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.content-form h1{
-    padding-top: 30%;
-    font-size: 50px;
-    font-weight: bold;
-    margin: 0;
+.content-form h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .content-form p {
-    font-size: 20px;
+  font-size: 18px;
+  max-width: 300px;
+  font-family: "Questrial";
+  margin-top: 15px;
 }
 
-.appear{
-    opacity: 1;
-    color: black;
+.appear {
+  opacity: 1;
+  color: black;
 }
-.visible{
-    padding-top: 30%;
-    width: 80%;
-    height: 70%;
+.visible {
+  width: 80%;
+  height: 70%;
 }
 
+@media only screen and (max-width: 1500px) {
+  .moto_title h1 {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .content-container {
+    right: 0;
+  }
+}
 @media only screen and (max-width: 1200px) {
-    body {
-        overflow-x: hidden;
-    }
+  .moto-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-    .moto-app-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .btn-container {
+    position: relative;
+    margin: 0;
+    margin-top: 50px;
+    left: 0;
+    transform: none;
+  }
 
-    .btn-container {
-        position: unset;
-        margin: 0;
-        margin-top: 50px;
-    }
+  .button-img-active {
+    width: 100%;
+    text-align: center;
+  }
 
-    .button-img-active {
-        width: 100%;
-        text-align: center;
-    }
+  .images-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
 
-    .images-container {
-        width: 100vw;
-        height: 933.11px;
-    }
+  .phone-image {
+    /* width: 100vw; */
+    height: 120%;
+  }
 
-    .phone-image {
-        width: 100vw;
-        height: auto;
-    }
+  .phone-image img {
+    /* width: 100%;
+        height: auto; */
+    height: 100%;
+    object-fit: cover;
+  }
+  .button-img-active {
+    font-size: 75px;
+  }
 
-    .phone-image img {
-        width: 100%;
-        height: auto;
-    }
+  .content-container {
+    position: relative;
+    width: 500px;
+    margin: 0;
+    height: 350px;
+    transform: none;
+    margin-bottom: 18vh;
+  }
 
-    .content-container {
-        position: relative;
-        width: 500px;
-        margin: 0;
-        height: 350px;
-    }
+  .content-form {
+    height: 350px;
+    padding: 0 10px;
+  }
 
-    .content-form {
-        height: 350px;
-    }
-
-    .visible{
-        padding-top: 0;
-        width: 100%;
-        height: 350px;
-    }
-
-    .content-form h1{
-        padding: 0;
-        font-size: 30px;
-    }
+  .visible {
+    padding-top: 0;
+    height: 350px;
+  }
+  .content-form p {
+    margin-top: 30px;
+    max-width: 460px;
+    line-height: 1.1;
+  }
+  .content-form h1 {
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .moto_title h1 {
+    font-size: 60px;
+  }
 }
 
 @media only screen and (max-width: 1040px) {
-    .images-container {
-        height: 813px;
-    }
+  .images-container {
+    height: 813px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .moto_title h1 {
+    font-size: 55px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .images-container {
-        height: 703px;
-    }
+  .images-container {
+    height: 703px;
+  }
 }
 
 @media only screen and (max-width: 765px) {
+  .images-container {
+    height: 599px;
+  }
 
-    .images-container {
-        height: 599px;
-    }
+  .btn-container {
+    width: 250px;
+    height: 150px;
+  }
 
-    .btn-container {
-        width: 250px;
-        height: 150px;
-    }
-
-    .button-img-active {
-        font-size: 50px;
-        height: 40px;
-    }
+  .button-img-active {
+    font-size: 50px;
+    height: 40px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
+  .phone-image {
+    width: 650px;
+  }
 
-    .phone-image {
-        width: 650px;
-    }
-
-    .phone-image img {
-        width: 100%;
-    }
+  .phone-image img {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .content-container {
-        width: 400px;
-    }
+  .content-container {
+    width: 80vw;
+  }
 }
 
 @media only screen and (max-width: 414px) {
-    .images-container {
-        height: 500px;
-    }
+  .images-container {
+    height: 500px;
+  }
 
-    .phone-image {
-        width: 100vw;
-    }
+  .phone-image {
+    width: 100vw;
+  }
 
-    .phone-image img {
-        width: 100%;
-    }
-    .content-container {
-        width: 380px;
-    }
+  .phone-image img {
+    width: 100%;
+  }
+  .content-container {
+    width: 380px;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-    .content-container {
-        width: 350px;
-    }
+  .content-container {
+    width: 350px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-    .content-container {
-        width: 330px;
-    }
+  .content-container {
+    width: 330px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    .content-container {
-        width: 280px;
-        margin-left: 0;
-    }
+  .content-container {
+    width: 280px;
+    margin-left: 0;
+  }
 }
