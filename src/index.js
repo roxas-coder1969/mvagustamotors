@@ -18,6 +18,7 @@ import { FooterGe } from "./generalLayout/footer_test";
 import { ContactUsLayout } from "./contactUs/contactUsLayout";
 import MotorRideAppLayout from "./motorRideApp/motorRideApp_Layout";
 import {Container} from "./certificate/mv-certificate";
+import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -48,6 +49,7 @@ function Index() {
           <Route path="/dragster800rrscs" component={Dragster800RR_SCS} />
           <Route path="/brutale1000rr" component={BodyBrutale1000RR} />
           <Route path="/certificate" component={Container} />
+          <Route path="/buy-your-mv" component={BuyYourMvLayout} />
           {/* <Route
             path="/brutale1000serieoro"
             component={BodyBrutale1000SerieOro}
