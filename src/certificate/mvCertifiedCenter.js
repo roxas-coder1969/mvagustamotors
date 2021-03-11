@@ -9,8 +9,9 @@ export const progresses = [
 
 export function MVCertifiedCenter() {
     const [object, setObject] = useState(data[0]);
-    var width1, width2;
-    var id1, id2;
+    let width1, width2;
+    let id1, id2;
+    var y,y2;
 
     function changeBackground() {
         if (object == data[0]) {
@@ -22,68 +23,71 @@ export function MVCertifiedCenter() {
             setObject(data[0]);
         }
     }
+  
 
     function animationChange1() {
-        if (object == data[0]) { setObject(data[1]); }
-        var i = 0;
-        while (i == 0) {
-            i = 1;
-            document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
-            document.getElementsByClassName("certified-button-label")[1].classList.remove("certified-button-label-change");
-            document.getElementById("certified-button-border-change1").classList.add("certified-button-border-changed");
-            document.getElementById("certified-button-border-change2").classList.remove("certified-button-border-changed");
-            width1 = 0;
-            id1 = setInterval(frame, 2 - 0);
 
-            function frame() {
-                if (width1 > 100) {
-                    clearInterval(id1);
-                    animationChange2();
-                }
-                else {
-                    width1 += 0.1;
-                    document.getElementById("certified-button-border-change1").style.width = width1 + "%";
-                }
+        if (object == data[0]) { setObject(data[1]); }
+
+        y = document.getElementById("change1");
+        y.addEventListener("click", animationChange1); 
+        y2 = document.getElementById("change2");
+        y2.addEventListener("click", animationChange2); 
+        width1 = 0;
+        document.getElementById("certified-button-border-change1").style.width = 0 + "%";
+        clearInterval(id1);
+       
+        document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
+        document.getElementsByClassName("certified-button-label")[1].classList.remove("certified-button-label-change");
+        document.getElementById("certified-button-border-change1").classList.add("certified-button-border-changed");
+        document.getElementById("certified-button-border-change2").classList.remove("certified-button-border-changed");
+        id1 = setInterval(frame, 50 - 0);
+        function frame() {
+            if (width1 >= 100) {
+                clearInterval(id1);
+
+                animationChange2();
+            }
+            else {
+                width1++;
+                document.getElementById("certified-button-border-change1").style.width = width1 + "%";
             }
         }
     }
-    function animationChange2() {
-        clearInterval(id1);
-        if (object == data[1]) { setObject(data[0]); }
-        width1 = 100;
-        // document.getElementById("certified-button-border-change1").style.width = width1 + "%";
 
+    function animationChange2() {
+        setObject(data[0]);
+
+        clearInterval(id1);
+        document.getElementById("certified-button-border-change1").style.width = 100 + "%";
+        width2 = 0;
+        document.getElementById("certified-button-border-change2").style.width = width2 + "%";
+        console.log("truoc 2" + id1);
+
+        clearInterval(id2);
+        document.getElementById("certified-button-border-change1").style.width = "100%";
         document.getElementsByClassName("certified-button-label")[1].classList.remove("certified-button-label-reset");
         document.getElementsByClassName("certified-button-label")[1].classList.add("certified-button-label-change");
         document.getElementById("certified-button-border-change2").classList.add("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.remove("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.add("certified-button-border-full");
-        document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
-        let i = 0;
-        width2 = 0;
-        // document.getElementById("certified-button-border-change2").classList.add("certified-button-border-changed");
-        // document.getElementsByClassName("certified-button-label")[1].classList.add("certified-button-label-change");
-        while (i == 0) {
-            i = 1;
-            id2 = setInterval(frame, 2 - 0);
-            function frame() {
-                if (width2 >= 100) {
-                    clearInterval(id2);
-                    i = 0;
-                } else {
-                    width2 += 0.1;
-                    document.getElementById("certified-button-border-change2").style.width = width2 + "%";
-                }
+       
+        id2 = setInterval(frame, 10 - 0);
+        function frame() {
+            if (width2 >= 100) {
+                clearInterval(id2);
+            } else {
+                width2 += 0.1;
+                document.getElementById("certified-button-border-change2").style.width = width2 + "%";
             }
         }
-
     }
 
     useEffect(() => {
+        animationChange1();
         setTimeout(() => {
             changeBackground()
         }, 5000);
-        animationChange1();
     }, [])
 
     return (
@@ -107,14 +111,14 @@ export function MVCertifiedCenter() {
                         </p>
                     </div>
                     <div className="certified-center-right">
-                        <img src={"img/" + object.img} alt=""/>
+                        <img src={"img/" + object.img} />
                     </div>
                 </div>
                 <div className="certified-center-button">
-                    <div className="certified-center-button-left" onClick={animationChange1}>
+                    <div className="certified-center-button-left" id="change1">
                         <Progress signal="left" />
                     </div>
-                    <div className="certified-center-button-right" onClick={animationChange2}>
+                    <div className="certified-center-button-right" id="change2">
                         <Progress signal="right" />
                     </div>
                 </div>
