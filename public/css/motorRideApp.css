@@ -1,10 +1,22 @@
-.Container1{
+
+#body {
+    display: flex;
+    justify-content: center;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.Ride-App-History{
     height: 100%;
     width: 100%;
 }
 
 .history{
-    background-image: url('../image/community-xl.png');
+    background-image: url('../img/community-xl.png');
     background-size: cover;
     height: 830px;
     width: 100%;
@@ -42,13 +54,13 @@
     margin-left: 20px;
     margin-top: 450px;
 }
-.moto_list{
+.Ride-App-Moto-List{
     text-align: center;
     height: 100%;
     width: 100%;
     padding-top: 100px;
 }
-.moto_list h1{
+.Ride-App-Moto-List h1{
     font-family: 'Anton', sans-serif;
     font-size: 80px;
 }
@@ -76,7 +88,7 @@
     font-family: 'Anton', sans-serif;
     font-size: 20px;
 }
-.mobi_app{
+.Ride-App-Mobi{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -118,21 +130,23 @@
     height: 100%;
 }
 
-.Container4{
+.Ride-App-Download{
    height: 850px;
    width: 100%;
 }
 .Download{
-    background-image: url("../img/rideApp/download-bg-xl.jpg");
+    justify-content: center;
+    background-image: url("../img/download-bg-xl.jpg");
     background-size: cover;
     height: 100%;
-    /* justify-content: center;
-    text-align: center;
-    display: flex; */
+    display: flex;
+    align-items: center;
 }
 .dow-in{
-    position:absolute;
-    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .download_des{
     width: 60%;
@@ -143,56 +157,19 @@
     margin-left: 20%;
 }
 /*button download*/
-.bt-layout-app {
+.mobi-ride-app-button {
     position: absolute;
     margin-top: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 40%;
     width: 200px;
     height: 50px;
     border-radius: 20px;
     background-color: white;
     display: block;
-    transition: 0.3s ease;
-    overflow: hidden;
+    transition: 0.5s ease;
 }
 
-.bt-tt-sl-1,
-.bt-tt-sl-2 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100%;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    transition: 0.4s ease;
-}
 
-.bt-tt-sl-2 {
-    color: white;
-}
-.bt-layout:hover{
-    background-color: black;
-}
-.bt-layout:hover .bt-tt-sl-1 {
-    animation: transformTxt-1 0.4s ease;
-    top: -100%;
-}
-.bt-layout:hover .bt-tt-sl-2 {
-    animation: transformTxt-2 0.4s ease;
-    top: -100%;
-}
-.bt-layout:not(:hover) .bt-tt-sl-1{
-    animation: transformTxtReverse-1 0.4s ease;
-    top: 0;
-}
-.bt-layout:not(:hover) .bt-tt-sl-2{
-    animation: transformTxtReverse-1 0.4s ease;
-    top: 0;
-}
 @keyframes transformTxtReverse-1 {
     0% {
         top: -100%;
@@ -238,36 +215,6 @@
         opacity: 1;
     }
 }    
-/*header app*/
-/* .mobi-app{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.mobi-app-des{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.mobi_app_titmoble{
-    text-align: center;
-}
-.mobi_app_head{
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-}
-.mobi_app_button{
-  
-}
-.mobi-app-pucture{
-    width: 50%;
-}
-.mobi-app-pucture img{
-    width: 100%;
-
-} */
 @media only screen and (max-width: 791px)
 {
     .mobi_app{
@@ -286,8 +233,7 @@
 
     .mobi_app_button{
         position: absolute;
-        margin-top: 270%;
-        margin-right: 32%;
+        margin-top: 120%;
     }
     .mobi_app_right{
         height: 50%;
@@ -300,8 +246,8 @@
     
     .history{
         width: 100%;
-        margin-top: 50%;
-        background-image: url("../image/community-m.png");
+        margin-top: 20%;
+        background-image: url("../img/community-m.png");
     }
     .Container1{
         margin: 0px;
@@ -327,12 +273,11 @@
         font-size: 30px;
     }
     .Download{
-        background-image: url("../image/download-bg-s.jpg");
+        background-image: url("../img/download-bg-s.jpg");
         background-size: cover;
         height: 100%;
-        /* justify-content: center;
-        text-align: center;
-        display: flex; */
+        display: flex;
+        align-items: center;
     }
     .download_des{
         width: 60%;
@@ -343,4 +288,7 @@
         margin-left: 20%;
     }
 
+    .mobi-ride-app-button {
+        left: 35%;
+    }
 }
