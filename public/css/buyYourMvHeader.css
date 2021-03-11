@@ -71,6 +71,7 @@ strong{
     opacity: 0.5;
     text-align: justify;
     line-height: 1.5;
+    margin-top: 2px;
 }
 
 .area-Varese{
@@ -121,10 +122,6 @@ strong{
 
 
 @media screen and (max-width: 1024px) {
-
-    .area-contents, .area-Varese, .title-journey{
-        width: 780px;
-    }
 
     .area-contents-size{
         max-width: 780px;
