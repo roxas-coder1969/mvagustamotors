@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function BodyContainer() {
+export function MotorRideAppHistoryContainer() {
     return (
         <>
-            <div className="Container1">
+            <div className="Ride-App-History">
                 <div className="history">
                     <div className="history_left">
                     <div className="history_title">
