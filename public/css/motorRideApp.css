@@ -91,7 +91,7 @@
   font-family: "Bebas Neue";
   font-weight: 900;
   font-size: 50px;
-  width: 300px;
+  width: 150px;
   text-align: center;
   display: inline-block;
   line-height: 100%;
@@ -172,12 +172,12 @@
   align-items: center;
 }
 .download_des {
-    text-align: center;
+  text-align: center;
 }
-.download_des h1{
+.download_des h1 {
   width: 60%;
   display: inline-block;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   text-align: center;
   font-size: 70px;
   color: white;
@@ -186,17 +186,40 @@
   /* font-weight:  100; */
   /* margin-left: 20%; */
 }
+
 /*button download*/
+.dow_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .mobi-ride-app-button {
-  position: absolute;
-  margin-top: 30px;
-  left: 40%;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: white;
-  display: block;
-  transition: 0.5s ease;
+  margin-top: 20px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobi-ride-app-button span {
+  position: relative;
+  color: white;
+  padding: 10px 50px;
+  font-family: "anton";
+  font-weight: 100;
+  font-size: 20px;
+}
+.mobi-ride-app-button:hover {
+  background: white;
+}
+.mobi-ride-app-button:hover span {
+  animation: transformTxtReverse 0.3s ease;
+  color: black;
+}
+.mobi-ride-app-button:not(:hover) span {
+  animation: transformTxt 0.3s ease;
 }
 @media only screen and (max-width: 1500px) {
   .Ride-App-Mobi {
@@ -204,21 +227,21 @@
     margin-bottom: 20vh;
     min-height: 500px;
   }
-  .moto_list_name{
-      font-size: 38px;
+  .moto_list_name {
+    font-size: 38px;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .download_des h1{
-      width: 75%;
+  .download_des h1 {
+    width: 75%;
   }
 }
 @media only screen and (max-width: 990px) {
-  .download_des h1{
-      width: 80%;
-      font-size: 60px;
+  .download_des h1 {
+    width: 80%;
+    font-size: 60px;
   }
-    .Ride-App-Mobi {
+  .Ride-App-Mobi {
     height: 60vh;
   }
   .mobi_app_head h1 strong {
@@ -232,6 +255,9 @@
     /* display: none; */
     display: grid;
     grid-template-columns: repeat(2, 50%);
+  }
+  .moto_list_name {
+    width: 300px;
   }
 }
 
@@ -295,9 +321,9 @@
   .moto-app-container {
     margin-top: 20vh;
   }
-  .download_des h1{
-      width: 85%;
-      font-size: 55px;
-      line-height: 90%;
+  .download_des h1 {
+    width: 85%;
+    font-size: 55px;
+    line-height: 90%;
   }
 }

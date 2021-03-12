@@ -11,20 +11,20 @@ import { MotorRideDownloadContainer } from './component/motorRideDownload';
 
 const imgData = [
   {
-    name: "BRUTALE 1000 SERIE ORO",
-    imgSrc: "main.png",
+    name: "Brutale 1000 RR",
+    imgSrc: "review0.png",
   },
   {
-    name: "BRUTALE 1000 RR",
-    imgSrc: "main (1).png",
+    name: "Dragster 800 rr",
+    imgSrc: "review1.png",
   },
   {
-    name: "SUPERVELOCE 800 SERIE ORO",
-    imgSrc: "main (2).png",
+    name: "F800",
+    imgSrc: "review2.png",
   },
   {
     name: "SUPERVELOCE 800",
-    imgSrc: "main (3).png",
+    imgSrc: "review3.png",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function MotorRideAppLayout() {
     return (
       <>
           <NavDesktop colorBlack={true}/>
-          <Nav color="white" />
+          <Nav color="black" />
           <PageName namePage="Motor Ride App" />
           <MobileRideAppContainer/>
           <MotorRideAppHistoryContainer/>

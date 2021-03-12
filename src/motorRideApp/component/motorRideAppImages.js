@@ -23,7 +23,6 @@ export function MotorRideAppImagesContainer({ src }) {
               <div className="moto_list_name">{imgSrcData.name}</div>
             </div>
           ))}
-          ;
         </div>
       </div>
     </>
