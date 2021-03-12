@@ -1,6 +1,8 @@
 import React from "react";
-import { Spring } from "react-spring/renderprops";
-
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 export default function MotorPageHeader({ headerData }) {
   return (
     <>
@@ -28,14 +30,20 @@ export default function MotorPageHeader({ headerData }) {
             }}
           ></div>
           <div className="motorPageHeader-Content-center">
-            <div className="motorPageHeader-Content-center-top">
-              {headerData.manifesto_Arr.map((item, index) => (
-                <div className="motorPageHeader-manifesto">
-                  <p>{headerData.manifesto_Arr[index]}</p>
-                </div>
-              ))}
-            </div>
-
+            <Fade bottom cascade>
+              <div className="motorPageHeader-Content-center-top">
+                {headerData.manifesto_Arr.map((item, index) => (
+                  <div className="motorPageHeader-manifesto">
+                    <ScrollAnimation
+                    delay ={index * 300}
+                      animateIn="fadeInUp"
+                    >
+                      <p>{headerData.manifesto_Arr[index]}</p>
+                    </ScrollAnimation>
+                  </div>
+                ))}
+              </div>
+            </Fade>
             <div className="motorPageHeader-Content-center-bottom">
               <p>{headerData.contentHeaderContent}</p>
             </div>
