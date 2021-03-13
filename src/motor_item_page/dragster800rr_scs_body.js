@@ -7,6 +7,7 @@ import MotorProperties from "../generalLayout/motorProperties";
 import MvEngineMotor from "../generalLayout/mvEngineMotor";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
+import OrderLayout from "../generalLayout/orderLayout/orderLayout";
 import PageName from "../generalLayout/pageName";
 
 const heroGradientStart = "#777777";
@@ -127,6 +128,7 @@ export default function Dragster800RR_SCS() {
       <DesignTips designTips={dragster800rr_scs_infor.designTips} />
       <MvEngineMotor engineInf={dragster800rr_scs_infor.engineInf} />
       <MotorItem advantages={dragster800rr_scs_infor.advantages} />
+      <OrderLayout modelName={dragster800rr_scs_infor.namePage} price={dragster800rr_scs_infor.header.price}/>
     </>
   );
 }
