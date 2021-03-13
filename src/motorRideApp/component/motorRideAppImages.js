@@ -1,5 +1,5 @@
 import React from "react";
-
+import ScrollAnimation from "react-animate-on-scroll";
 export function MotorRideAppImagesContainer({ src }) {
   return (
     <>
@@ -11,17 +11,19 @@ export function MotorRideAppImagesContainer({ src }) {
           </p>
         </div>
         <div className="moto_list_content">
-          {src.map((imgSrcData) => (
-            <div className="moto_list_item">
-              <div className="moto_list_picture">
-                <img
-                  className="moto_list_img"
-                  src={`/img/${imgSrcData.imgSrc}`}
-                  alt=""
-                ></img>
+          {src.map((imgSrcData, imgIndex) => (
+            <ScrollAnimation animateIn="fadeIn" delay={imgIndex * 100}>
+              <div className="moto_list_item">
+                <div className="moto_list_picture">
+                  <img
+                    className="moto_list_img"
+                    src={`/img/${imgSrcData.imgSrc}`}
+                    alt=""
+                  ></img>
+                </div>
+                <div className="moto_list_name">{imgSrcData.name}</div>
               </div>
-              <div className="moto_list_name">{imgSrcData.name}</div>
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>

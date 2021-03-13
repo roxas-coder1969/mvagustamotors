@@ -4,7 +4,7 @@ import { BodyHomepage } from "./bodyHomePage/bodyHomepage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import BodyBrutale1000RR from "./motor_item_page/brutale1000rr_body";
 import Rush1000 from "./motor_item_page/rush1000_body";
-import BodyBrutale1000SerieOro from "./motor_item_page/brutale1000serie_oro_body";
+import "animate.css/animate.min.css";
 import Dragster800Rosso from "./motor_item_page/dragster800rosso_body";
 import BodyDragster800RR from "./motor_item_page/dragster800rr_body";
 import Dragster800RR_SCS from "./motor_item_page/dragster800rr_scs_body";

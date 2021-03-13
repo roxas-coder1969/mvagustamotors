@@ -1,10 +1,10 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.min.css";
+import Fade from "react-reveal/Fade";
 function AboutUsContent() {
   return (
     <div className="about-us-content">
-      <ScrollAnimation animateIn="fadeInUp" animateOut="fadeOutUp">
+      <ScrollAnimation animateIn="fadeInUp">
         <p>We look to the future, and build machines</p>
         <br />
         <p>that are always one step ahead</p>
@@ -15,7 +15,8 @@ function AboutUsContent() {
 export function AboutUs() {
   return (
     <>
-        <div className="about-us-slogan">
+      <div className="about-us-slogan">
+        <ScrollAnimation animateIn="fadeInUp" duration={1}>
           <div className="about-us-video">
             {/* <video width="100%" height="100%" >
                 <source src="Background.mp4" type="video/mp4"></source>
@@ -47,13 +48,15 @@ export function AboutUs() {
           <p>WE </p>
           <span>CRAFT </span>
           <p>EMOTIONS.</p>
-        </div>
-        <AboutUsContent />
-        <div className="about-us-button-container">
-          <button>
-            <a href="about-us">ABOUT US</a>
-          </button>
-        </div>
+        </ScrollAnimation>
+      </div>
+
+      <AboutUsContent />
+      <div className="about-us-button-container">
+        <button>
+          <a href="about-us">ABOUT US</a>
+        </button>
+      </div>
     </>
   );
 }
