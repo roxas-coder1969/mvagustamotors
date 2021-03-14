@@ -12,7 +12,7 @@ const dragster800rosso_infor = {
   header: {
     price: "13.400",
     nameHeaderTitle: "dragster800rosso/dragster-800-rosso.svg",
-    bgHeaderParallax: "dragster800rosso/dragster-800-rosso-xl.png",
+    bgHeaderParallax_Large: "dragster800rosso/dragster-800-rosso-xl.png",
     manifesto_Arr: ["YOUR", "DREAM", "STARTS", "HERE"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:

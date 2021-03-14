@@ -18,7 +18,8 @@ const spAlpine_infor = {
     price: "36.300",
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     nameHeaderTitle: "superveloceAlpine/superveloce-alpine.svg",
-    bgHeaderParallax: "superveloceAlpine/superveloce-alpine-xl.png",
+    bgHeaderParallax_Large: "superveloceAlpine/superveloce-alpine-xl.png",
+    bgHeaderParallax_Small: "superveloceAlpine/superveloce-alpine-m.png",
     manifesto_Arr: ["MOTOR", "SPORT'S", "BLUE", "MODE"],
     contentHeaderContent:
       "A luxury, high-performing limited edition Superveloce in Alpine's signature blue livery.",
@@ -103,10 +104,6 @@ export default function SuperveloceAlpine() {
   // });
   return (
     <>
-      <div
-        className="nav-pc-homepage"
-        style={{ background: spAlpine_infor.colorBg }}
-      ></div>
       <NavDesktop />
       <Nav color="white" />
       <PageName namePage={spAlpine_infor.namePage} />

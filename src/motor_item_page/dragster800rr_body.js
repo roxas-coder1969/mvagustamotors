@@ -16,7 +16,8 @@ const dragster800rr_infor = {
   header: {
     price: "19.500",
     nameHeaderTitle: "dragster800rr2021/dragster-rr.svg",
-    bgHeaderParallax: "dragster800rr2021/dragster-rr-xl.png",
+    bgHeaderParallax_Large: "dragster800rr2021/dragster-rr-xl.png",
+    bgHeaderParallax_Small: "dragster800rr2021/dragster-rr-m.png",
     manifesto_Arr: ["WE", "LOVE", "BEING", "REBELS"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 95%)`,
     contentHeaderContent:

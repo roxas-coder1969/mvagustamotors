@@ -16,7 +16,8 @@ const rush1000infor = {
   header: {
     price: "34.000",
     nameHeaderTitle: "rush1000/sssssss.svg",
-    bgHeaderParallax: "rush1000/rush-1000-xl.png",
+    bgHeaderParallax_Large: "rush1000/rush-1000-xl.png",
+    bgHeaderParallax_Small: "rush1000/rush-1000-m.png",
     manifesto_Arr: ["THE", "BEAST", "MODE"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:

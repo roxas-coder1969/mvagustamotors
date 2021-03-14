@@ -18,7 +18,8 @@ const dragster800rr_scs_infor = {
   header: {
     price: "20.000",
     nameHeaderTitle: "dragster800rrscs/dragster-rr-scs.svg",
-    bgHeaderParallax: "dragster800rrscs/dragster-rr-scs-xl.png",
+    bgHeaderParallax_Large: "dragster800rrscs/dragster-rr-scs-xl.png",
+    bgHeaderParallax_Small: "dragster800rrscs/dragster-rr-scs-m.png",
     manifesto_Arr: ["THE", "SMART", "REBEL"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:

@@ -1070,9 +1070,10 @@ a {
   .about-us-video {
     display: block;
     transform: translateX(-50%);
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
-    top: calc(1vw * 3);
+    /* top: calc(1vw * 3); */
+    top: -20px;
     max-width: 220px;
     width: calc((11vw - 20px) * 4);
     min-width: 200px;

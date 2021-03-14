@@ -16,7 +16,7 @@ export function AboutUs() {
   return (
     <>
       <div className="about-us-slogan">
-        <ScrollAnimation animateIn="fadeInUp" duration={1}>
+        <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={false}>
           <div className="about-us-video">
             {/* <video width="100%" height="100%" >
                 <source src="Background.mp4" type="video/mp4"></source>
@@ -33,10 +33,11 @@ export function AboutUs() {
 
             <div className="video-control-layout">
               <a
+                target="_blank"
                 href="https://www.youtube.com/watch?v=sIgz03cfQ4U"
                 className="video-control"
-                target="_blank"
-              ></a>
+              >
+              </a>
             </div>
           </div>
           <p>WE DO NOT</p>

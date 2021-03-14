@@ -17,7 +17,8 @@ const brutale1000rr_infor = {
   header: {
     price: "31.500",
     nameHeaderTitle: "brutale1000rr/brutale-1000-rr.svg",
-    bgHeaderParallax: "brutale1000rr/brutale-1000-rr-xl.webp",
+    bgHeaderParallax_Large: "brutale1000rr/brutale-1000-rr-xl.png",
+    bgHeaderParallax_Small: "brutale1000rr/brutale-1000-rr-m.png",
     manifesto_Arr: ["THE", "ALL-OUT", "HYPER", "NAKED"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:
@@ -113,10 +114,6 @@ const brutale1000rr_infor = {
 };
 
 export default function BodyBrutale1000RR() {
-  // window.addEventListener("scroll", () => {
-  //   ScrollNavFunction();
-  //   NavWhiteCompact();
-  // });
   return (
     <>
       <NavDesktop />

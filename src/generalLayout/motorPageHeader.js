@@ -58,7 +58,7 @@ export default function MotorPageHeader({ headerData }) {
         <div
           className="xxxxx"
           style={{
-            backgroundImage: `url(./img/${headerData.bgHeaderParallax})`,
+            // backgroundImage: `url(./img/${headerData.bgHeaderParallax})`,
             width: "100%",
             height: "115vh",
             position: "sticky",
@@ -66,7 +66,19 @@ export default function MotorPageHeader({ headerData }) {
             backgroundPosition: "left",
             backgroundSize: "cover",
           }}
-        ></div>
+        >
+          <picture style={{ height: "100%" }}>
+            <source
+              media="(max-width: 991px)"
+              srcset={`./img/${headerData.bgHeaderParallax_Small}`}
+            ></source>
+            <img
+              src={`./img/${headerData.bgHeaderParallax_Large}`}
+              alt=""
+              height="100%"
+            ></img>
+          </picture>
+        </div>
       </div>
     </>
   );

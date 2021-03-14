@@ -516,6 +516,7 @@
   }
   .xxxxx {
     height: 100vh !important;
+    transform: translateX(-10%);
   }
 }
 @media screen and (max-width: 750px) {
