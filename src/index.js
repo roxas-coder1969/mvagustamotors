@@ -19,6 +19,8 @@ import { ContactUsLayout } from "./contactUs/contactUsLayout";
 import MotorRideAppLayout from "./motorRideApp/motorRideApp_Layout";
 import {Container} from "./certificate/mv-certificate";
 import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
+import F3_800_Body from "./motor_item_page/f3_800_body";
+import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -56,6 +58,8 @@ function Index() {
           /> */}
           <Route path="/rush1000" component={Rush1000} />
           <Route path="/dragster800rosso" component={Dragster800Rosso} />
+          <Route path="/f3-800" component={F3_800_Body} />
+          <Route path="/brutale800rr" component={Brutale800RRBody} />
           <Route path="/superveloce-alpine" component={SuperveloceAlpine} />
         </Switch>
         <MvEmail />

@@ -1,13 +1,14 @@
 import React from "react";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
-import MotorProperties from "../generalLayout/motorProperties";
-import DesignTips from "../generalLayout/designTips";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
-import MotorItem from "../generalLayout/motorItems";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 
 const heroGradientStart = "#363531";
 const heroGradientEnd = "#161514";
@@ -125,6 +126,7 @@ export default function BodyBrutale1000RR() {
       <DesignTips designTips={brutale1000rr_infor.designTips} />
       <MvEngineMotor engineInf={brutale1000rr_infor.engineInf} />
       <MotorItem advantages={brutale1000rr_infor.advantages} />
+      <OrderLayout modelName={brutale1000rr_infor.namePage} price={brutale1000rr_infor.header.price} />
     </>
   );
 }

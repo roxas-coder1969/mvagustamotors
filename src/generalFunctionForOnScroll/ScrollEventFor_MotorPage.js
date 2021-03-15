@@ -1,6 +1,6 @@
 
 export function ScrollNavFunction() {
-  if (document.documentElement.scrollTop > window.innerHeight / 3) {
+  if (document.documentElement.scrollTop > 30) {
     for (
       var i = 0;
       i < document.getElementsByClassName("mv-container-div").length;

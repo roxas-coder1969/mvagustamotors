@@ -1,13 +1,13 @@
 import React from "react";
-import DesignTips from "../generalLayout/designTips";
-import Motor3d from "../generalLayout/motor3d";
-import MotorItem from "../generalLayout/motorItems";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
-import MotorProperties from "../generalLayout/motorProperties";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
-import OrderLayout from "../generalLayout/orderLayout/orderLayout";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 import PageName from "../generalLayout/pageName";
 
 const heroGradientStart = "#777777";
@@ -114,10 +114,6 @@ const dragster800rr_scs_infor = {
   ],
 };
 export default function Dragster800RR_SCS() {
-  // window.addEventListener("scroll", () => {
-  //   ScrollNavFunction();
-  //   NavWhiteCompact();
-  // });
   return (
     <>
       <NavDesktop />

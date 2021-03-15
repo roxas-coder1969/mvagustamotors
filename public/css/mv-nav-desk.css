@@ -136,6 +136,7 @@
 .mv-nav-desktop ul ul > li > a {
   transition: all 0.2s ease;
   opacity: 1;
+  width: 100%;
 }
 .mv-nav-type-pc > a {
   display: flex !important;
@@ -298,6 +299,26 @@
   right: 0;
   display: none;
 }
+.nav-dealer {
+  height: 190px;
+}
+.dealer-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dealer-container a {
+  padding-bottom: 25px;
+  padding-top: 5px;
+  font-family: "Questrial";
+  font-size: 18px;
+  width: 200px;
+  font-weight: 500;
+  color: black;
+  position: static !important;
+}
 .company-container,
 .ownership-container {
   position: relative;
@@ -357,7 +378,8 @@
   position: static !important;
   margin: 7px 0;
 }
-.ownership-container a div {
+.ownership-container a div,
+.dealer-container a div {
   transition: 0s ease;
   padding-top: 25px;
   height: 100%;
@@ -375,9 +397,17 @@
   margin-right: 20px;
   font-weight: 600;
 }
-.ownership-container a:hover div {
+.dealer-container a div{
+  padding-top: 0;
+  left: 0;
+  text-align: left;
+  padding-left: 20px;
+}
+.ownership-container a:hover div,
+.dealer-container a:hover div {
   display: block;
 }
+#dealer-tag-nav:hover .nav-dealer,
 #company-tag-nav:hover .nav-company,
 #store-tag-nav:hover .nav-store {
   display: flex;
@@ -390,6 +420,9 @@
   display: flex;
   padding-top: 10px;
 }
+.nav-dealer {
+  right: -135.34px;
+}
 .nav-company {
   right: -221.7px;
 }
@@ -400,7 +433,7 @@
   /* padding-left: 110.83px; */
   left: -127.83px;
 }
-.nav-ownership a:hover {
+.nav-ownership a:hover, .dealer-container a:hover {
   font-weight: bold;
 }
 .nav-store {
@@ -458,7 +491,7 @@
 }
 
 @media screen and (max-width: 1500px) {
-  #nav-logo{
+  #nav-logo {
     width: 135px;
     top: -25px;
   }
