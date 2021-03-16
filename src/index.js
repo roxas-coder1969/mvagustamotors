@@ -21,6 +21,7 @@ import {Container} from "./certificate/mv-certificate";
 import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
 import F3_800_Body from "./motor_item_page/f3_800_body";
 import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
+import Brutale800RR_SCS_Body from "./motor_item_page/brutale800rr_scs_body";
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -60,6 +61,7 @@ function Index() {
           <Route path="/dragster800rosso" component={Dragster800Rosso} />
           <Route path="/f3-800" component={F3_800_Body} />
           <Route path="/brutale800rr" component={Brutale800RRBody} />
+          <Route path="/brutale-800-rr-scs" component={Brutale800RR_SCS_Body} />
           <Route path="/superveloce-alpine" component={SuperveloceAlpine} />
         </Switch>
         <MvEmail />

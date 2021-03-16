@@ -41,6 +41,7 @@ const navMotorsData = [
       },
       {
         name: "RR SCS",
+        link: "brutale-800-rr-scs",
         imgModelSrc: "brutale-800-rr-scs.webp",
         imgLogoSrc: "brutale-800-rr-scs-pop.svg",
         prize: "34.000",

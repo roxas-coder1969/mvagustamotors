@@ -85,7 +85,7 @@ const brutale1000rr_infor = {
         small: "rush1000/items/electronics-s.jpg",
       },
       description:
-        "The Brutale 1000 RR features a full ride-by-wire multi map system with IMU inertial platform, which manages traction control with slip strategies (8 different settings and the option to deactivate it). Also featuring a Front Lift Control system with active and non-active options, it gives the rider entire freedom of action. The Brutale 1000 RR is equipped with a second generation TFT dashboard ",
+        "The Brutale 1000 RR features a full ride-by-wire multi map system with IMU inertial platform, which manages traction control with slip strategies (8 different settings and the option to deactivate it). Also featuring a Front Lift Control system with active and non-active options, it gives the rider entire freedom of action. The Brutale 1000 RR is equipped with a second generation TFT dashboard.",
     },
     {
       name: "Technology",
