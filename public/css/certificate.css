@@ -208,16 +208,30 @@
   background-color: black;
   background-size: 200%;
   background-position: right;
+  
   position: absolute;
 }
 /* .label-border-changed-reset{
     color: black;
 } */
-.certified-button-label-change > p {
+.certified-button-border-full{
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  height: 1px;
+}
+#certified-button-border-change1{
+  background-color: black;
+  width: 100%;
+}
+.certified-button-border-reset{
+  width:100%;
+}
+.certified-button-label-change > p{
   color: black;
 }
-.certified-button-label-reset > p {
-  color: rgba(0, 0, 0, 0.3);
+.certified-button-label-reset > p{
+  color: rgba(0,0,0,0.3);
 }
 
 @keyframes loadingChange {
@@ -280,6 +294,7 @@
 @media screen and (max-width: 991px) {
   .mv-content {
     padding-top: 120px;
+    
   }
   .info-card-certified {
     padding-left: 50px;
@@ -330,6 +345,7 @@
     text-align: center;
   }
   .certified-button-label .label-header {
+    cursor: none;
     margin: 0;
     font-size: 30px;
   }

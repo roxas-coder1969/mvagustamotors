@@ -4,7 +4,7 @@ import { BodyHomepage } from "./bodyHomePage/bodyHomepage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import BodyBrutale1000RR from "./motor_item_page/brutale1000rr_body";
 import Rush1000 from "./motor_item_page/rush1000_body";
-import BodyBrutale1000SerieOro from "./motor_item_page/brutale1000serie_oro_body";
+import "animate.css/animate.min.css";
 import Dragster800Rosso from "./motor_item_page/dragster800rosso_body";
 import BodyDragster800RR from "./motor_item_page/dragster800rr_body";
 import Dragster800RR_SCS from "./motor_item_page/dragster800rr_scs_body";
@@ -19,7 +19,10 @@ import { ContactUsLayout } from "./contactUs/contactUsLayout";
 import MotorRideAppLayout from "./motorRideApp/motorRideApp_Layout";
 import {Container} from "./certificate/mv-certificate";
 import {NewsMV} from './news/newMV';
-
+import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
+import F3_800_Body from "./motor_item_page/f3_800_body";
+import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
+import Brutale800RR_SCS_Body from "./motor_item_page/brutale800rr_scs_body";
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -51,12 +54,16 @@ function Index() {
           <Route path="/brutale1000rr" component={BodyBrutale1000RR} />
           <Route path="/certificate" component={Container} />
           <Route path="/news" component = {NewsMV}/>
+          <Route path="/buy-your-mv" component={BuyYourMvLayout} />
           {/* <Route
             path="/brutale1000serieoro"
             component={BodyBrutale1000SerieOro}
           /> */}
           <Route path="/rush1000" component={Rush1000} />
           <Route path="/dragster800rosso" component={Dragster800Rosso} />
+          <Route path="/f3-800" component={F3_800_Body} />
+          <Route path="/brutale800rr" component={Brutale800RRBody} />
+          <Route path="/brutale-800-rr-scs" component={Brutale800RR_SCS_Body} />
           <Route path="/superveloce-alpine" component={SuperveloceAlpine} />
         </Switch>
         <MvEmail />

@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
   /* background-size: auto 18%; */
   margin-bottom: 10px;
-  animation: fades .75s ease;
+  animation: fades 1.5s ease;
 }
 .motorPageHeader-Content-center {
   width: 100%;
@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .motorPageHeader-manifesto {
   width: 100%;
@@ -55,7 +56,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: fades .5s ease-in-out;
+  /* animation: fades .5s ease-in-out; */
 }
 .motorPageHeader-manifesto p {
   font-family: "Anton", sans-serif;
@@ -515,6 +516,7 @@
   }
   .xxxxx {
     height: 100vh !important;
+    transform: translateX(-10%);
   }
 }
 @media screen and (max-width: 750px) {

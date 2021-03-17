@@ -1,43 +1,55 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BodyContainer } from './component/bodyContainer';
-import { BodyContainer2 } from './component/BodyContainer-2';
-import { BodyContainer0 } from './component/BodyContainer-0';
-import { BodyContainer4 } from './component/BodyContainer-4';
 import NavDesktop from '../generalLayout/navDesk';
 import Nav from '../generalLayout/nav';
 import PageName from '../generalLayout/pageName';
+import { MotorRideAppPhone } from './component/motorRideAppPhone';
+import { MobileRideAppContainer } from './component/mobileRideApp';
+import { MotorRideAppHistoryContainer } from './component/motorRideAppHistory';
+import { MotorRideAppImagesContainer } from './component/motorRideAppImages';
+import { MotorRideDownloadContainer } from './component/motorRideDownload';
 
 
 const imgData = [
   {
-    name: "BRUTALE 1000 SERIE ORO",
-    imgSrc: "brutale_pr.png",
+    name: "Brutale 1000 RR",
+    imgSrc: "review0.png",
   },
   {
-    name: "BRUTALE 1000 RR",
-    imgSrc: "brutale_1000.png",
+    name: "Dragster 800 rr",
+    imgSrc: "review1.png",
   },
   {
-    name: "SUPERVELOCE 800 SERIE ORO",
-    imgSrc: "supervelocer_pr.png",
+    name: "F800",
+    imgSrc: "review2.png",
   },
   {
     name: "SUPERVELOCE 800",
-    imgSrc: "superveloce_pr.png",
+    imgSrc: "review3.png",
   },
 ];
+
+const imgPhoneData = {
+  
+  imgSrc0: "app-preview-2.png",
+  
+  imgSrc1: "itineraries-xl.png",
+  
+  imgSrc2: "trips-m.png"
+  
+};
+
 export default function MotorRideAppLayout() {
 
     return (
       <>
           <NavDesktop colorBlack={true}/>
-          <Nav color="white" />
+          <Nav color="black" />
           <PageName namePage="Motor Ride App" />
-          <BodyContainer0 />
-          <BodyContainer />
-          <BodyContainer2 imgSrc={imgData} />
-          <BodyContainer4 />
+          <MobileRideAppContainer/>
+          <MotorRideAppHistoryContainer/>
+          <MotorRideAppImagesContainer src={imgData}/>
+          <MotorRideAppPhone imgPhoneSrc={imgPhoneData}/>
+          <MotorRideDownloadContainer/>
       </>
     );
 }

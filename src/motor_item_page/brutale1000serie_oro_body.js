@@ -1,9 +1,9 @@
 import React from "react";
 import MvEmail from "../generalLayout/mvEmail";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
 import { ScrollNavFunction } from "../generalFunctionForOnScroll/ScrollEventFor_MotorPage";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import { FooterGe } from "../generalLayout/footer_test";
 import Nav from "../generalLayout/nav";
 import { NavWhiteCompact } from "../generalFunctionForOnScroll/ScrollEventFor_Homepage";

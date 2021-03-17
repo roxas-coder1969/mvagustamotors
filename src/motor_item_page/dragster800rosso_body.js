@@ -1,7 +1,7 @@
 import React from "react";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
 const heroGradientStart = "#252524";
@@ -12,7 +12,7 @@ const dragster800rosso_infor = {
   header: {
     price: "13.400",
     nameHeaderTitle: "dragster800rosso/dragster-800-rosso.svg",
-    bgHeaderParallax: "dragster800rosso/dragster-800-rosso-xl.png",
+    bgHeaderParallax_Large: "dragster800rosso/dragster-800-rosso-xl.png",
     manifesto_Arr: ["YOUR", "DREAM", "STARTS", "HERE"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:
@@ -43,6 +43,7 @@ export default function Dragster800Rosso() {
       <PageName namePage={dragster800rosso_infor.namePage}></PageName>
       <MotorPageHeader headerData={dragster800rosso_infor.header} />
       <Motor3d models={dragster800rosso_infor.Model3ds} />
+      
     </>
   );
 }

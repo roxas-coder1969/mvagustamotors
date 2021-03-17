@@ -30,8 +30,8 @@ export default {
     ["800 Rosso", "800rosso_turismo.png", "4", "998", "208", "turismoveloce800rosso"],
   ],
   "/motor?type=F3": [
-    ["F3 800", "F3800.png", "4", "998", "208","f3800"],
-    ["F3 800 RC", "F3800rc.png", "4", "998", "208", "f3800rc"],
+    ["F3 800", "F3800.png", "4", "998", "208","f3-800"],
+    ["F3 800 RC", "F3800rc.png", "4", "998", "208", "f3-800rc"],
   ],
   "/motor?type=Sp-Veloce": [
     ["800", "800.png", "4", "998", "208", "superveloce-800"],

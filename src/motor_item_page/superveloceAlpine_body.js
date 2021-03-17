@@ -1,11 +1,12 @@
 import React from "react";
-import DesignTips from "../generalLayout/designTips";
-import MotorItem from "../generalLayout/motorItems";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
-import MotorProperties from "../generalLayout/motorProperties";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 import PageName from "../generalLayout/pageName";
 import AlpineDiscover from "../layoutSpAlpine/alpineDiscover";
 import AlpineMotion from "../layoutSpAlpine/alpineMotion";
@@ -18,7 +19,8 @@ const spAlpine_infor = {
     price: "36.300",
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     nameHeaderTitle: "superveloceAlpine/superveloce-alpine.svg",
-    bgHeaderParallax: "superveloceAlpine/superveloce-alpine-xl.png",
+    bgHeaderParallax_Large: "superveloceAlpine/superveloce-alpine-xl.png",
+    bgHeaderParallax_Small: "superveloceAlpine/superveloce-alpine-m.png",
     manifesto_Arr: ["MOTOR", "SPORT'S", "BLUE", "MODE"],
     contentHeaderContent:
       "A luxury, high-performing limited edition Superveloce in Alpine's signature blue livery.",
@@ -103,10 +105,6 @@ export default function SuperveloceAlpine() {
   // });
   return (
     <>
-      <div
-        className="nav-pc-homepage"
-        style={{ background: spAlpine_infor.colorBg }}
-      ></div>
       <NavDesktop />
       <Nav color="white" />
       <PageName namePage={spAlpine_infor.namePage} />
@@ -117,6 +115,7 @@ export default function SuperveloceAlpine() {
       <DesignTips designTips={spAlpine_infor.designTips} />
       <MvEngineMotor engineInf={spAlpine_infor.engineInf} />
       <MotorItem advantages={spAlpine_infor.advantages} />
+      <OrderLayout modelName={spAlpine_infor.namePage} price={spAlpine_infor.header.price}></OrderLayout>
     </>
   );
 }

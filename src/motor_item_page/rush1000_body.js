@@ -1,22 +1,23 @@
 import React from "react";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
-import DesignTips from "../generalLayout/designTips";
-import MotorProperties from "../generalLayout/motorProperties";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
-import MotorItem from "../generalLayout/motorItems";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 const heroGradientStart = "#A4191B";
 const heroGradientEnd = "#6B0B0D";
 const rush1000infor = {
   namePage: "Rush 1000",
-  colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
   header: {
     price: "34.000",
     nameHeaderTitle: "rush1000/sssssss.svg",
-    bgHeaderParallax: "rush1000/rush-1000-xl.png",
+    bgHeaderParallax_Large: "rush1000/rush-1000-xl.png",
+    bgHeaderParallax_Small: "rush1000/rush-1000-m.png",
     manifesto_Arr: ["THE", "BEAST", "MODE"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:
@@ -111,16 +112,8 @@ const rush1000infor = {
   ],
 };
 export default function Rush1000() {
-  // window.addEventListener("scroll", () => {
-  //   ScrollNavFunction();
-  //   NavWhiteCompact();
-  // });
   return (
     <>
-      {/* <div
-        className="nav-pc-homepage"
-        style={{ background: rush1000infor.colorBg }}
-      ></div> */}
       <NavDesktop />
       <Nav color="white" />
       <PageName namePage={rush1000infor.namePage} />
@@ -130,6 +123,7 @@ export default function Rush1000() {
       <DesignTips designTips={rush1000infor.designTips} />
       <MvEngineMotor engineInf={rush1000infor.engineInf} />
       <MotorItem advantages={rush1000infor.advantages} />
+      <OrderLayout modelName={rush1000infor.namePage} price={rush1000infor.header.price}/>
     </>
   );
 }

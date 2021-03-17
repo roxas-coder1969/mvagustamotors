@@ -31,6 +31,7 @@ const navMotorsData = [
       },
       {
         name: "RR",
+        link: "brutale800rr",
         imgModelSrc: "brutale-800-rr.webp",
         imgLogoSrc: "brutale-800-rr-pop.svg",
         prize: "34.000",
@@ -40,6 +41,7 @@ const navMotorsData = [
       },
       {
         name: "RR SCS",
+        link: "brutale-800-rr-scs",
         imgModelSrc: "brutale-800-rr-scs.webp",
         imgLogoSrc: "brutale-800-rr-scs-pop.svg",
         prize: "34.000",
@@ -162,6 +164,7 @@ const navMotorsData = [
     models: [
       {
         name: "800",
+        link: "f3-800",
         imgModelSrc: "f3-800.webp",
         imgLogoSrc: "f3-800-pop.svg",
         prize: "34.000",
@@ -171,6 +174,7 @@ const navMotorsData = [
       },
       {
         name: "800 RC",
+        link: "f3-800rc",
         imgModelSrc: "f3-800-rc.webp",
         imgLogoSrc: "f3-800-rc-pop.svg",
         prize: "34.000",
@@ -379,8 +383,12 @@ export default function NavDesktop({ colorBlack }) {
             <a href>Store</a>
             <NavStore />
           </li>
-          <li className={"mv-nav-dk mv-nav-right " + colorNavTag}>
+          <li
+            className={"mv-nav-dk mv-nav-right " + colorNavTag}
+            id="dealer-tag-nav"
+          >
             <a href>Dealer</a>
+            <NavDealer />
           </li>
           <li
             className={"mv-nav-dk mv-nav-right " + colorNavTag}
@@ -392,16 +400,33 @@ export default function NavDesktop({ colorBlack }) {
         </ul>
 
         <a href="homepage" style={{ width: "140px" }}>
-          <img
-            alt=""
-            src="./img/mv-agusta-logo.png"
-            id="nav-logo"
-          ></img>
+          <img alt="" src="./img/mv-agusta-logo.png" id="nav-logo"></img>
         </a>
       </nav>
     </>
   );
 }
+const NavDealer = () => {
+  return (
+    <>
+      <div className="mv-pr-layout nav-dealer">
+        <div className="dealer-container">
+          <a href="my-portfolio">
+            My Portfolio
+            <div>
+              HELLO I'M KING, THIS IS MY TEAM CLONE PRODUCT. TAKE A LOOK FOR
+              MORE INFORMATION
+            </div>
+          </a>
+          <a href="sign-in">
+            Sign In
+            <div>CONNECT TO US WITH YOUR PERSONAL ACCOUNT</div>
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};
 const NavOwnership = () => {
   return (
     <>
@@ -493,9 +518,18 @@ const NavCompany = () => {
         </div>
         <div className="company-container">
           <h3>FOLLOW US</h3>
-          <a href="instagram">Instagram</a>
-          <a href="facebook">Facebook</a>
-          <a href="youtube">Youtube</a>
+          <a href="https://www.instagram.com/mvagustamotor/" target="_blank">
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/mvagustamotor" target="_blank">
+            Facebook
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCGJ0cJav9lCQfwza2q8PKxg"
+            target="_blank"
+          >
+            Youtube
+          </a>
         </div>
       </div>
     </>

@@ -1,346 +1,329 @@
-.Container1{
-    height: 100%;
-    width: 100%;
+.Ride-App-History {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.history_title,
+.history_descr {
+  position: absolute;
+}
+.history_title {
+  top: 20px;
+  left: 20px;
+}
+.history_descr {
+  left: 20px;
+  bottom: 20px;
+}
+.history_title h1 {
+  color: white;
+  font-size: 65px;
+  font-family: "Anton", sans-serif;
+  line-height: 100%;
+  letter-spacing: 2px;
+  font-weight: 98%;
+}
+.history_title h2 {
+  color: white;
+  font-size: 60px;
+  font-family: serif;
+  line-height: 100%;
+}
+.history_descr p {
+  position: relative;
+  font-family: "Questrial";
+  color: white;
+  line-height: 1.2;
+  font-size: 19px;
+  max-width: 400px;
 }
 
-.history{
-    background-image: url('../image/community-xl.png');
-    background-size: cover;
-    height: 830px;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    align-items: center;
-}
-.history_left{
-    height: 100%;
-    width: 550px;
-}
-.history_left h1{
-    color: white;
-    font-size: 80px;
-    font-family: 'Anton', sans-serif;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.history_left h2{
-    color: white;
-    font-size: 80px;
-    font-family: 'Playfair Display', serif;
-    margin-left: 15px;
-}
-.history_left p{
-    color: white;
-    position: absolute;
-    width: 550px;
-    font-size: 20px;
-}
-.history_descr{
-    position: relative;
-    height: 100px;
-    width: 500px;
-    margin-left: 20px;
-    margin-top: 450px;
-}
-.moto_list{
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 100px;
-}
-.moto_list h1{
-    font-family: 'Anton', sans-serif;
-    font-size: 80px;
-}
-.moto_list_title{
-    text-align: center;
-    justify-content: center;
-}
-.moto_list_content{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    padding: 10px;
-}
-.moto_list_item{
-    width: 100%;
-    padding-top: 50px;
-    text-align: center;
-}
-.moto_list_picture{
-    width: 100%;
-}
-.moto_list_img{
-    width: 100%;
-}
-.moto_list_name{
-    font-family: 'Anton', sans-serif;
-    font-size: 20px;
-}
-.mobi_app{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.mobi_app_left{
-    width:  50%;
-    height: 100%;
-}
-.mobi_app_title{
-    font-family: 'Anton', sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 20%;
-    margin-left: 30%;
-}
-.mobi_app_descr{
-    font-size: 20px;
-}
-.mobi_app_button{
-    height: 150px;
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 55%;
-    margin-top: 10%;
-}
-.store1{
-    margin-bottom: 5px;
-}
-.mobi_app_right{
-    height: 100%;
-    width: 550px;
-}
-.mobi_app_picture{
-    height: 100%;
-}
-.mobi_app_img{
-    height: 100%;
+.history__img {
+  width: 100%;
+  z-index: -1;
+  max-height: 1024px;
+  object-fit: cover;
 }
 
-.Container4{
-   height: 850px;
-   width: 100%;
+.Ride-App-Moto-List {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 20vh;
 }
-.Download{
-    background-image: url("../img/rideApp/download-bg-xl.jpg");
-    background-size: cover;
-    height: 100%;
-    /* justify-content: center;
-    text-align: center;
-    display: flex; */
+.moto_title h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 2px;
 }
-.dow-in{
-    position:absolute;
-    margin-top: 50%;
+.moto_title p {
+  margin-top: 10px;
+  font-family: "Questrial";
+  font-size: 13.5px;
+  line-height: 1.1;
+  display: inline-block;
+  text-align: center;
+  max-width: 300px;
 }
-.download_des{
-    width: 60%;
-    font-family: 'Anton', sans-serif;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    margin-left: 20%;
+.moto_list_title {
+  text-align: center;
+  justify-content: center;
 }
+.moto_list_content {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  padding: 10px;
+}
+.moto_list_item {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+.moto_list_picture {
+  width: 100%;
+}
+.moto_list_img {
+  width: 100%;
+}
+.moto_list_name {
+  margin-top: 10px;
+  font-family: "Bebas Neue";
+  font-weight: 900;
+  font-size: 50px;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  line-height: 100%;
+}
+.Ride-App-Mobi {
+  height: 85vh;
+  min-height: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+.mobi_app_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_title {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_descr {
+  font-size: 20px;
+  max-width: 310px;
+}
+.mobi_app_descr p {
+  text-align: center;
+}
+.mobi_app_button {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.store1 {
+  margin-bottom: 5px;
+}
+.mobi_app_right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobi_app_picture {
+  height: 100%;
+}
+.mobi_app_img {
+  height: 100%;
+}
+
+.Ride-App-Download {
+  height: 850px;
+  width: 100vw;
+}
+.Download {
+  justify-content: center;
+  background-image: url("../img/download-bg-xl.jpg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.dow-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download_des {
+  text-align: center;
+}
+.download_des h1 {
+  width: 60%;
+  display: inline-block;
+  font-family: "Bebas Neue";
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1;
+  /* font-weight:  100; */
+  /* margin-left: 20%; */
+}
+
 /*button download*/
-.bt-layout-app {
-    position: absolute;
-    margin-top: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: white;
-    display: block;
-    transition: 0.3s ease;
-    overflow: hidden;
+.dow_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobi-ride-app-button {
+  margin-top: 20px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobi-ride-app-button span {
+  position: relative;
+  color: white;
+  padding: 10px 50px;
+  font-family: "anton";
+  font-weight: 100;
+  font-size: 20px;
+}
+.mobi-ride-app-button:hover {
+  background: white;
+}
+.mobi-ride-app-button:hover span {
+  animation: transformTxtReverse 0.3s ease;
+  color: black;
+}
+.mobi-ride-app-button:not(:hover) span {
+  animation: transformTxt 0.3s ease;
+}
+@media only screen and (max-width: 1500px) {
+  .Ride-App-Mobi {
+    height: 75vh;
+    margin-bottom: 20vh;
+    min-height: 500px;
+  }
+  .moto_list_name {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .download_des h1 {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .download_des h1 {
+    width: 80%;
+    font-size: 60px;
+  }
+  .Ride-App-Mobi {
+    height: 60vh;
+  }
+  .mobi_app_head h1 strong {
+    font-size: 60px;
+  }
+  .history {
+    width: 100%;
+    background-image: url("../img/community-m.png");
+  }
+  .moto_list_content {
+    /* display: none; */
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .moto_list_name {
+    width: 300px;
+  }
 }
 
-.bt-tt-sl-1,
-.bt-tt-sl-2 {
+@media only screen and (max-width: 791px) {
+  .Container1 {
+    margin: 0px;
+    /* display: none; */
+  }
+
+  .moto_list_item {
+    justify-content: center;
+    text-align: center;
+  }
+  .moto_list_picture {
     width: 100%;
+  }
+  .moto_list_img {
+    width: 100%;
+  }
+  .moto_list_name {
+    font-size: 30px;
+  }
+  .Download {
+    background-image: url("../img/download-bg-s.jpg");
+    background-size: cover;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 100%;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    transition: 0.4s ease;
+  }
+
+  .mobi-ride-app-button {
+    left: 35%;
+  }
 }
 
-.bt-tt-sl-2 {
-    color: white;
-}
-.bt-layout:hover{
-    background-color: black;
-}
-.bt-layout:hover .bt-tt-sl-1 {
-    animation: transformTxt-1 0.4s ease;
-    top: -100%;
-}
-.bt-layout:hover .bt-tt-sl-2 {
-    animation: transformTxt-2 0.4s ease;
-    top: -100%;
-}
-.bt-layout:not(:hover) .bt-tt-sl-1{
-    animation: transformTxtReverse-1 0.4s ease;
-    top: 0;
-}
-.bt-layout:not(:hover) .bt-tt-sl-2{
-    animation: transformTxtReverse-1 0.4s ease;
-    top: 0;
-}
-@keyframes transformTxtReverse-1 {
-    0% {
-        top: -100%;
-        opacity: 0;
-    }
-
-    100% {
-        top: 0;
-        opacity: 1;
-    }
-}
-@keyframes transformTxtReverse-2 {
-    0% {
-        top: -100%;
-        opacity: 1;
-    }
-
-    100% {
-        top: 0;
-        opacity: 1;
-    }
-}
-@keyframes transformTxt-1 {
-    0% {
-        top: 0;
-        opacity: 0.8;
-    }
-
-    100% {
-        top: -100%;
-        opacity: 0;
-    }
-}
-
-@keyframes transformTxt-2 {
-    0% {
-        top: 0;
-        opacity: 0;
-    }
-
-    100% {
-        top: -100%;
-        opacity: 1;
-    }
-}    
-/*header app*/
-/* .mobi-app{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.mobi-app-des{
-    width: 50%;
-    display: flex;
+@media only screen and (max-width: 765px) {
+  .Ride-App-Mobi {
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.mobi_app_titmoble{
-    text-align: center;
-}
-.mobi_app_head{
-    font-family: 'Anton', sans-serif;
-    font-size: 50px;
-}
-.mobi_app_button{
-  
-}
-.mobi-app-pucture{
-    width: 50%;
-}
-.mobi-app-pucture img{
+    height: auto;
+    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobi_app_left,
+  .mobi_app_right {
     width: 100%;
-
-} */
-@media only screen and (max-width: 791px)
-{
-    .mobi_app{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .mobi_app_left{
-        height: 50%;
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mobi_app_button{
-        position: absolute;
-        margin-top: 270%;
-        margin-right: 32%;
-    }
-    .mobi_app_right{
-        height: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-    }
-    
-    .history{
-        width: 100%;
-        margin-top: 50%;
-        background-image: url("../image/community-m.png");
-    }
-    .Container1{
-        margin: 0px;
-        /* display: none; */
-    }
-    .moto_list_content{
-        /* display: none; */
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-    }
-    .moto_list_item{
-        justify-content: center;
-        text-align: center;
-       
-    }
-    .moto_list_picture{
-        width: 100%;
-    }
-    .moto_list_img{
-        width: 100%;
-    }
-    .moto_list_name{
-        font-size: 30px;
-    }
-    .Download{
-        background-image: url("../image/download-bg-s.jpg");
-        background-size: cover;
-        height: 100%;
-        /* justify-content: center;
-        text-align: center;
-        display: flex; */
-    }
-    .download_des{
-        width: 60%;
-        font-family: 'Anton', sans-serif;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        margin-left: 20%;
-    }
-
+  }
+  .history_title h1 {
+    font-size: 38px;
+  }
+  .history_title h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .moto_list_content {
+    /* display: none; */
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .moto-app-container {
+    margin-top: 20vh;
+  }
+  .download_des h1 {
+    width: 85%;
+    font-size: 55px;
+    line-height: 90%;
+  }
 }

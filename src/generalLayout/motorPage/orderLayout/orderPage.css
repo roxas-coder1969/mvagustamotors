@@ -1,0 +1,113 @@
+.orderPage-Layout {
+  width: 100%;
+  margin: 35vh 0 18vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.orderPage-Layout h3 {
+  text-align: center;
+  font-family: "anton";
+  line-height: 100%;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(130, 130, 130, 0.9);
+}
+.orderPage-Layout >span {
+  text-align: center;
+  margin-top: 2px;
+  line-height: 100%;
+  font-family: fantasy, serif;
+  font-size: 85px;
+}
+.orderPage-Layout strong {
+  line-height: 100%;
+  margin-top: 36px;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
+.orderPage-Layout p {
+  max-width: 450px;
+  font-family: "Questrial";
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.orderPage-Layout a {
+  width: 220px;
+  height: 55px;
+  overflow: hidden;
+  border: 1px solid black;
+  margin-top: 45px;
+  border-radius: 2px;
+}
+.orderPage-Layout a *{
+  cursor: pointer;
+}
+.orderPage-Layout a span {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.orderPage-Layout a:hover {
+  background-color: black;
+}
+.orderPage-Layout a:not(:hover) span {
+  animation: transformTxt 0.25s ease;
+}
+.orderPage-Layout a:hover span {
+  animation: transformTxtReverse 0.25s ease;
+  color: white;
+}
+@media screen and (max-width: 990px) {
+  .orderPage-Layout{
+      margin: 35vh 0 20vh 0;
+  }
+  .orderPage-Layout h3 {
+    font-size: 35px;
+  }
+  .orderPage-Layout > span {
+    font-size: 75px;
+  }
+  .orderPage-Layout strong {
+    font-size: 28px;
+  }
+  .orderPage-Layout p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 765px){
+    .orderPage-Layout h3 {
+    font-size: 30px;
+  }
+  .orderPage-Layout > span {
+    font-size: 65px;
+  }
+  .orderPage-Layout p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 575px){
+    .orderPage-Layout{
+      margin: 28vh 0 20vh 0;
+  }
+    .orderPage-Layout > span {
+    font-size: 72px;
+    margin-top: 5px;
+  }
+  .orderPage-Layout strong{
+    margin-top: 45px;
+  }
+  .orderPage-Layout p{
+      margin-top: 40px;
+      padding: 0 10px;
+  }
+}

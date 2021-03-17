@@ -14,7 +14,7 @@ export function FooterGe() {
         </div>
         <div className="footer_ge_center">
           <div className="footer_ge_center_container">
-            <a href>CONTACT US</a>
+            <a href="contact-us">CONTACT US</a>
             <a href>PRIVACY & LEGAL</a>
           </div>
         </div>

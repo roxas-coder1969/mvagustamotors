@@ -1,0 +1,268 @@
+.moto-app-container {
+  width: 100vw;
+  margin-top: 25vh;
+  position: relative;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-image {
+  position: absolute;
+  height: 100vh;
+  opacity: 0;
+}
+
+.phone-image img {
+  height: 100%;
+}
+
+.btn-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 250px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12%;
+}
+
+.button-img-active {
+  font-size: 80px;
+  font-weight: 900;
+  color: black;
+  line-height: 100%;
+  opacity: 0.2;
+  cursor: pointer;
+  font-family: "Bebas Neue";
+}
+
+.button-img-active:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-form {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content-form h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.content-form p {
+  font-size: 18px;
+  max-width: 300px;
+  font-family: "Questrial";
+  margin-top: 15px;
+}
+
+.appear {
+  opacity: 1;
+  color: black;
+}
+.visible {
+  width: 80%;
+  height: 70%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .moto_title h1 {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .content-container {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .moto-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .btn-container {
+    position: relative;
+    margin: 0;
+    margin-top: 50px;
+    left: 0;
+    transform: none;
+  }
+
+  .button-img-active {
+    width: 100%;
+    text-align: center;
+  }
+
+  .images-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .phone-image {
+    /* width: 100vw; */
+    height: 120%;
+  }
+
+  .phone-image img {
+    /* width: 100%;
+        height: auto; */
+    height: 100%;
+    object-fit: cover;
+  }
+  .button-img-active {
+    font-size: 75px;
+  }
+
+  .content-container {
+    position: relative;
+    width: 500px;
+    margin: 0;
+    height: 350px;
+    transform: none;
+    margin-bottom: 18vh;
+  }
+
+  .content-form {
+    height: 350px;
+    padding: 0 10px;
+  }
+
+  .visible {
+    padding-top: 0;
+    height: 350px;
+  }
+  .content-form p {
+    margin-top: 30px;
+    max-width: 460px;
+    line-height: 1.1;
+  }
+  .content-form h1 {
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .moto_title h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  .images-container {
+    height: 813px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .moto_title h1 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .images-container {
+    height: 703px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .images-container {
+    height: 599px;
+  }
+
+  .btn-container {
+    width: 250px;
+    height: 150px;
+  }
+
+  .button-img-active {
+    font-size: 50px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .phone-image {
+    width: 650px;
+  }
+
+  .phone-image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .images-container {
+    height: 500px;
+  }
+
+  .phone-image {
+    width: 100vw;
+  }
+
+  .phone-image img {
+    width: 100%;
+  }
+  .content-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .content-container {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .content-container {
+    width: 330px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .content-container {
+    width: 280px;
+    margin-left: 0;
+  }
+}

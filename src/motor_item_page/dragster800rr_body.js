@@ -1,13 +1,14 @@
 import React from "react";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
-import DesignTips from "../generalLayout/designTips";
-import MotorProperties from "../generalLayout/motorProperties";
-import MotorItem from "../generalLayout/motorItems";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 const heroGradientStart = "#294386";
 const heroGradientEnd = "#161616";
 const dragster800rr_infor = {
@@ -16,7 +17,8 @@ const dragster800rr_infor = {
   header: {
     price: "19.500",
     nameHeaderTitle: "dragster800rr2021/dragster-rr.svg",
-    bgHeaderParallax: "dragster800rr2021/dragster-rr-xl.png",
+    bgHeaderParallax_Large: "dragster800rr2021/dragster-rr-xl.png",
+    bgHeaderParallax_Small: "dragster800rr2021/dragster-rr-m.png",
     manifesto_Arr: ["WE", "LOVE", "BEING", "REBELS"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 95%)`,
     contentHeaderContent:
@@ -129,6 +131,7 @@ export default function BodyDragster800RR() {
       <DesignTips designTips={dragster800rr_infor.designTips} />
       <MvEngineMotor engineInf={dragster800rr_infor.engineInf} />
       <MotorItem advantages={dragster800rr_infor.advantages} />
+      <OrderLayout modelName={dragster800rr_infor.namePage} price={dragster800rr_infor.header.price}/>
     </>
   );
 }
